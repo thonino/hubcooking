@@ -15,6 +15,7 @@ function Recipes() {
       ingredients: "farine, viande hachée, eau, ail, vermicelle, sel, sauce soja", 
       preparation: "faire la pâte, faire la farce, faire les nems etc..", 
       Like: 1, 
+
     },
     { recipe_id: 2, 
       nom: "Crepe",
