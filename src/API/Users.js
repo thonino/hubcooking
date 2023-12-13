@@ -1,6 +1,28 @@
 function Users() { return [
-  { user_id: 0, nom: "admin", },
-  { user_id: 1, nom: "Thonino", },
-  { user_id: 2, nom: "Toto",},
+  { 
+    id: 0, 
+    Like: 1, 
+    nom: "admin", 
+    email: "admin@admin", 
+    photo: "admin.jpg",
+    password: "admin",
+
+  },
+  { 
+    id: 1, 
+    Like: 1, 
+    nom: "Thonino", 
+    email: "thonino@thonino", 
+    photo: "thonino.jpg", 
+    password: "thonino"
+,  },
+  { 
+    id: 2, 
+    Like: 1, 
+    nom: "Toto",
+    email: "toto@dtoto", 
+    photo: "toto.jpg", 
+    password: "toto"
+,  },
 ]}
 export default Users;

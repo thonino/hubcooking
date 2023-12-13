@@ -1,16 +1,25 @@
 function Pictures() {
     return [
       { 
-        picture_id: 0, 
+        id: 0, 
+        user_id: 0, 
+        Like: 15, 
         nom: "Cordon bleu", 
+        DateTime: "09/12/23 16h30", 
       },
       { 
-        picture_id: 1, 
+        id: 1, 
+        user_id: 2, 
+        Like: 6, 
         nom: "Frites maison", 
+        DateTime: "12/12/23 09h00", 
       },
       { 
-        picture_id: 2, 
+        id: 2, 
+        user_id: 2, 
+        Like: 50, 
         nom: "Panacota",
+        DateTime: "13/12/23 17h00", 
       },
     ];
   }

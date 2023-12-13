@@ -1,28 +1,31 @@
 function Recipes() {
     return [
-      { recipe_id: 0, 
+      { 
+        id: 0, 
+        user_id: 0, 
+        Like: 71, 
         nom: "Ravioli", 
         DateTime: "12/12/23 10h30", 
-        user_id: 0, 
         ingredients: "farine, viande hachée, eau, ail, choux blanc, sel, sauce soja", 
         preparation: "faire la pâte, faire la farce, faire les raviolies etc..", 
-        Like: 1, 
       },
-      { recipe_id: 1, 
+      { 
+        id: 1, 
+        user_id: 0, 
+        Like: 26, 
         nom: "Nem", 
         DateTime: "12/12/23 11h30", 
-        user_id: 0, 
         ingredients: "farine, viande hachée, eau, ail, vermicelle, sel, sauce soja", 
         preparation: "faire la pâte, faire la farce, faire les nems etc..", 
-        Like: 1, 
       },
-      { recipe_id: 2, 
+      { 
+        id: 2, 
+        user_id: 1, 
+        Like: 32, 
         nom: "Crepe",
         DateTime: "14/13/23 12h30", 
-        user_id: 1, 
         ingredients: "farine, lait, sucre, sel, oeufs",
         preparation: "faire la pâte, faire les crêpes etc..", 
-        Like: 1, 
       },
     ];
   }

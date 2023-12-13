@@ -5,6 +5,7 @@ function Home() {
   const [recipes, setRecipes] = useState([]);
   const [users, setUsers] = useState([]);
   const [pictures, setPictures] = useState([]);
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     fetch("/api/recipes")
@@ -24,20 +25,30 @@ function Home() {
       .then((json) => setPictures(json.pictures));
   }, []);
 
+  useEffect(() => {
+    fetch("/api/comments")
+      .then((response) => response.json())
+      .then((json) => setComments(json.comments));
+  }, []);
+
   return (
     <div>
       <h1>Home</h1>
       <br/>
       {recipes.map((data) => (
-        <div key={data.recipe_id}>{data.nom}</div>
+        <div key={data.id}>{data.nom}</div>
       ))}
       <br/>
       {users.map((data) => (
-        <div key={data.user_id}>{data.nom}</div>
+        <div key={data.id}>{data.nom}</div>
       ))}
       <br/>
       {pictures.map((data) => (
-        <div key={data.picture_id}>{data.nom}</div>
+        <div key={data.id}>{data.nom}</div>
+      ))}
+      <br/>
+      {comments.map((data) => (
+        <div key={data.id}>{data.text}</div>
       ))}
     </div>
   );
