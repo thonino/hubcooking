@@ -1,4 +1,4 @@
-function Pictures() {
+function PicturesAPI() {
     return [
       { 
         id: 0, 
@@ -21,7 +21,14 @@ function Pictures() {
         nom: "Panacota",
         DateTime: "13/12/23 17h00", 
       },
+      { 
+        id: 3, 
+        user_id: 2, 
+        Like: 13, 
+        nom: "Panacota",
+        DateTime: "13/12/23 18h00", 
+      },
     ];
   }
 
-export default Pictures;
+export default PicturesAPI;

@@ -1,4 +1,4 @@
-function Users() { return [
+function UsersAPI() { return [
   { 
     id: 0, 
     Like: 1, 
@@ -25,4 +25,4 @@ function Users() { return [
     password: "toto"
 ,  },
 ]}
-export default Users;
+export default UsersAPI;

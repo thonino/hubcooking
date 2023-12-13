@@ -1,5 +1,5 @@
 // Home.js
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
@@ -39,16 +39,8 @@ function Home() {
         <div key={data.id}>{data.nom}</div>
       ))}
       <br/>
-      {users.map((data) => (
-        <div key={data.id}>{data.nom}</div>
-      ))}
-      <br/>
       {pictures.map((data) => (
         <div key={data.id}>{data.nom}</div>
-      ))}
-      <br/>
-      {comments.map((data) => (
-        <div key={data.id}>{data.text}</div>
       ))}
     </div>
   );

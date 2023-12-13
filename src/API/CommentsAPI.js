@@ -1,4 +1,4 @@
-function Comments() {
+function CommentsAPI() {
     return [
       { 
         id: 0, 
@@ -33,4 +33,4 @@ function Comments() {
     ];
   }
 
-export default Comments;
+export default CommentsAPI;

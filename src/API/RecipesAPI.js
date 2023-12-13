@@ -1,4 +1,4 @@
-function Recipes() {
+function RecipesAPI() {
     return [
       { 
         id: 0, 
@@ -30,4 +30,4 @@ function Recipes() {
     ];
   }
 
-export default Recipes;
+export default RecipesAPI;
