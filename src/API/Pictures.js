@@ -1,4 +1,4 @@
-function PicturesAPI() {
+function Pictures() {
     return [
       { 
         picture_id: 0, 
@@ -15,4 +15,4 @@ function PicturesAPI() {
     ];
   }
 
-export default PicturesAPI;
+export default Pictures;

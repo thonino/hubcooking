@@ -1,4 +1,4 @@
-function RecipesAPI() {
+function Recipes() {
     return [
       { recipe_id: 0, 
         nom: "Ravioli", 
@@ -27,4 +27,4 @@ function RecipesAPI() {
     ];
   }
 
-export default RecipesAPI;
+export default Recipes;

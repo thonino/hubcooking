@@ -28,8 +28,8 @@ function Home() {
     <div>
       <h1>Home</h1>
       <br/>
-      {recipes.map((recipe) => (
-        <div key={recipe.recipe_id}>{recipe.nom}</div>
+      {recipes.map((data) => (
+        <div key={data.recipe_id}>{data.nom}</div>
       ))}
       <br/>
       {users.map((data) => (

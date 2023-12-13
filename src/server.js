@@ -1,25 +1,24 @@
 import { createServer } from 'miragejs'
-import RecipesAPI from './components/API/RecipesAPI.js'
-import UsersAPI from './components/API/UsersAPI.js'
-import PicturesAPI from './components/API/PicturesAPI.js'
+import Recipes from './API/Recipes.js'
+import Users from './API/Users.js'
+import Pictures from './API/Pictures.js'
 
 export function makeServer({ environment = "development" } = {}) {
-  let server = createServer({
-    environment,
+  let server = createServer({ environment,
 
     routes() {
       this.namespace = "api";
       
       this.get("/recipes", () => {
-        return { recipes: RecipesAPI() };
+        return { recipes: Recipes() };
       });
 
       this.get("/users", () => {
-        return { users: UsersAPI() };
+        return { users: Users() };
       });
       
       this.get("/pictures", () => {
-        return { pictures: PicturesAPI() };
+        return { pictures: Pictures() };
       });
     },
   });
