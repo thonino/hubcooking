@@ -5,6 +5,11 @@ import './dist/output.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { makeServer } from './server';
+
+if (process.env.NODE_ENV === "development") {
+  makeServer();
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
