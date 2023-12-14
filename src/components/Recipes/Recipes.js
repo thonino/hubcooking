@@ -6,14 +6,20 @@ function Recipes() {
   useEffect(() => {
     fetch("/api/recipes")
       .then((response) => response.json())
-      .then((json) => setRecipes(json.recipes));
+      .then((json) => {
+        setRecipes(json.recipes);
+      });
   }, []);
+
+
 
   return (
     <div>
       <h1>Les Recettes</h1><br/>
       {recipes.map((data) => (
-      <div key={data.id}>{data.name}</div>
+      <div key={data.id}>
+        {data.name}
+      </div>
       ))}
     </div>
   );

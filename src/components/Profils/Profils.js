@@ -13,7 +13,7 @@ function Profils() {
     <div>
       <h1>Les Profiles</h1><br/>
       {users.map((data) => (
-        <div key={data.id}>{data.nom}</div>
+        <div key={data.id}>{data.name}</div>
       ))}
     </div>
   );

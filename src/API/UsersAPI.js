@@ -2,7 +2,7 @@ function UsersAPI() { return [
   { 
     id: 0, 
     Like: 1, 
-    nom: "admin", 
+    name: "admin", 
     email: "admin@admin", 
     photo: "admin.jpg",
     password: "admin",
@@ -11,7 +11,7 @@ function UsersAPI() { return [
   { 
     id: 1, 
     Like: 1, 
-    nom: "Thonino", 
+    name: "Thonino", 
     email: "thonino@thonino", 
     photo: "thonino.jpg", 
     password: "thonino"
@@ -19,7 +19,7 @@ function UsersAPI() { return [
   { 
     id: 2, 
     Like: 1, 
-    nom: "Toto",
+    name: "Toto",
     email: "toto@dtoto", 
     photo: "toto.jpg", 
     password: "toto"

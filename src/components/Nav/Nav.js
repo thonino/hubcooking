@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <div>
+    <div className='roboto'>
       <nav className="bg-red text-white p-1">
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/" className="font-semibold text-lg">HubCooking</Link>
