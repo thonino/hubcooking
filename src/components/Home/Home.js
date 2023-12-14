@@ -1,5 +1,5 @@
-// Home.js
 import { useEffect, useState } from 'react';
+import About from './About';
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
@@ -34,38 +34,31 @@ function Home() {
   return (
     <div>
       <div className="flex justify-center items-center m-2 ">
-        <img  className="w-1/4 "src="logo-hc.png" alt="placeholder" />
+        <img className="w-1/4 " src="logo-hc.png" alt="placeholder" />
       </div>
-      <div className="">
-        <p className="hc-red pacifico text-3xl">Qui sommes nous ?</p>
-        <div className="flex flex-col justify-center items-center mt-2">
-          <div className="bg-red text-white w350  p-3">
-            <p className="">Description</p>
-          </div>
-          <div className="bg-red-light w350 p-3">
-            <p>
-              HubCooking est une plateforme entièrement gratuite, 
-              dédiée au partage de photos et de recettes culinaires. 
-            </p>
-            <p>
-            Nous offrons aux passionnés de cuisine la possibilité 
-            de consulter où de proposer des recettes. 
-            </p>
-            <p>
-            Lancée début 2024, notre équipe de 3 membres donne tout 
-            pour vous garantir une expérience utilisateur optimale.
-            </p>
+      <About />
+      <br />
+      <div>
+        <h1 className="hc-blue pacifico text-3xl">Dernières Photos !</h1>
+        <br />
+        <div className="flex justify-center">
+          <div className="flex flex-wrap w350">
+            {pictures.map((data) => (
+              <div key={data.id} className="">
+                <img
+                  className="flex w175"
+                  src={"/img/" + data.img}
+                  alt={data.name}
+                />
+              </div>
+            ))}
           </div>
         </div>
+        <br />
+        {recipes.map((data) => (
+          <div key={data.id}>{data.name}</div>
+        ))}
       </div>
-      <br/>
-      {pictures.map((data) => (
-        <div key={data.id}>{data.nom}</div>
-      ))}
-      <br/>
-      {recipes.map((data) => (
-        <div key={data.id}>{data.nom}</div>
-      ))}
     </div>
   );
 }

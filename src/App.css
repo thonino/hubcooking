@@ -23,7 +23,13 @@
 .hc-red{
   color: #EF476F;
 }
+.hc-blue{
+  color: #26547C;
+}
 
 .w350{
   width: 350px;
+}
+.w175 {
+  width: 175px;
 }

@@ -13,7 +13,7 @@ function Recipes() {
     <div>
       <h1>Les Recettes</h1><br/>
       {recipes.map((data) => (
-      <div key={data.id}>{data.nom}</div>
+      <div key={data.id}>{data.name}</div>
       ))}
     </div>
   );
