@@ -2,12 +2,28 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+/* 
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto Flex', sans-serif; 
+*/
 
+.roboto {
+  font-family: "Roboto Flex";
+}
+.pacifico {
+  font-family: "Pacifico";
+}
 .bg-red{
   background-color: #EF476F;
-  
+}
+.bg-red-light{
+  background-color: #FFCBCB;
+}
+.hc-red{
+  color: #EF476F;
+}
+
+.w350{
+  width: 350px;
 }
