@@ -37,7 +37,7 @@ function Home() {
         <img  className="w-1/4 "src="logo-hc.png" alt="placeholder" />
       </div>
       <div className="">
-        <p className="hc-red pacifico text-3xl">Qui somme nous ?</p>
+        <p className="hc-red pacifico text-3xl">Qui sommes nous ?</p>
         <div className="flex flex-col justify-center items-center mt-2">
           <div className="bg-red text-white w350  p-3">
             <p className="">Description</p>
