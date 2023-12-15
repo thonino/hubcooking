@@ -22,9 +22,9 @@ function TopRecipes() {
   return (
     <div>
       <div>
-        <p className="text-green-600 pacifico text-3xl">Top Recettes !</p>
+        <p className="hc-gray pacifico text-3xl">Top Recettes !</p>
         <div className="flex flex-col justify-center items-center mt-3">
-          <div className="bg-green-600 w350 p-3">
+          <div className="bg-gray w350 p-3">
             <p className="roboto text-xl font-bold text-white">
               Recettes les plus populaires
             </p>
