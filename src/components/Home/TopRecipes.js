@@ -59,11 +59,11 @@ function TopRecipes() {
                   >
                     {data.name}
                   </p>
-                  <button className="flex items-center mr-3 ">
+                  <button className="flex items-center  mr-3 ">
                     <i
-                      class={`bi bi-book top${
+                      class={`bi bi-book btn top${
                         index + 1
-                      } px-2 py-2 rounded text-white  `}
+                      }  rounded   `}
                     ></i>
                   </button>
                 </div>
