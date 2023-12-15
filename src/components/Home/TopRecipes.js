@@ -44,7 +44,7 @@ function TopRecipes() {
                   <p
                     className={`top${
                       index + 1
-                    } px-2 flex justify-center items-center`}
+                    } px-2 flex justify-center items-center text-white`}
                   >
                     {index + 1}
                   </p>
@@ -63,7 +63,7 @@ function TopRecipes() {
                     <i
                       class={`bi bi-book btn top${
                         index + 1
-                      }  rounded   `}
+                      }  rounded  text-white `}
                     ></i>
                   </button>
                 </div>
