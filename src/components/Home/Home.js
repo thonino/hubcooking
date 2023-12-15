@@ -24,15 +24,15 @@ function Home() {
       <br />
       <div className="flex flex-wrap justify-center gap-2">
         <div >
-          <p className="hc-blue pacifico text-3xl mb-2">
-            Les Dernières Photos !
+          <p className="hc-blue pacifico text-3xl mb-3">
+            Nos dernières photos !
           </p>
           <LastPictures />
           <br />
         </div>
         <div>
-          <p className="hc-blue pacifico text-3xl mb-2">
-            Les Dernières Recettes !
+          <p className="hc-blue pacifico text-3xl mb-3">
+            Nos dernières recettes !
           </p>
           <LastRecipes />
         </div>
