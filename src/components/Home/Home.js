@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import About from './About';
+import TopRecipes from './TopRecipes';
 import LastRecipes from './LastRecipes';
 import LastPictures from './LastPictures';
 
@@ -17,7 +17,10 @@ function Home() {
       <div className="flex justify-center items-center mt-2 ">
         <img className="w-1/4 " src="logo-hc.png" alt="placeholder"/>
       </div>
-      <About />
+      <div className="flex flex-wrap justify-center gap-4">
+        <About />
+        <TopRecipes />
+      </div>
       <br />
       <div className="flex flex-wrap justify-center gap-4">
         <div >
