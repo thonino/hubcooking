@@ -15,7 +15,7 @@ function LastPictures() {
             {pictures.map((data) => (
               <div key={data.id} >
                 <img
-                  className="flex w175 pl-1 pb-1"
+                  className="flex w175  pb-1"
                   src={"/img/" + data.img}
                   alt={data.name}
                 />

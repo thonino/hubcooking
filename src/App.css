@@ -14,28 +14,42 @@
 .pacifico {
   font-family: "Pacifico";
 }
-.bg-green , .top1{background-color: #06D6A0;}
+.bg-green , .top1{background-color: #07ad81;}
 .bg-red , .top2{ background-color: #EF476F;}
-.bg-blue , .top3{ background-color: #26547C;}
-.bg-yellow , .top4{ background-color: #FFD166;}
-.bg-gray{ background-color: #4E4E4E;}
+.bg-blue ,  .top3{ background-color: #26547C;}
+.bg-yellow , .top4{ background-color: #daab3f;}
+.bg-gray  , .top5{ background-color: #4E4E4E;}
+
 
 
 .bg-green-light , .top-light1{ background-color: #ACFFE9;}
 .bg-red-light , .top-light2{ background-color: #FFCBCB;}
 .bg-blue-light , .top-light3{ background-color: #9CD1FF;}
 .bg-yellow-light , .top-light4{ background-color: #FFECC0;}
-.bg-gray-light{ background-color: #E4E4E4;}
+.bg-gray-light, .top-light5{ background-color: #E4E4E4;}
 
 .hc-red{ color: #EF476F;}
 .hc-blue{ color: #26547C;}
-.hc-yellow{ color: #FFD166;}
-.hc-reen{ color: #06D6A0;}
+.hc-yellow{ color: #daab3f;}
+.hc-green{ color: #07ad81;}
 .hc-gray{ color: #4E4E4E;}
 
+.btn{
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Roboto Flex";
+}
+.btn:hover{
+  background-color: white;
+  color: #272727;
+}
 
 .w350{
   width: 350px;
+}
+.w360{
+  width: 360px;
 }
 .w175 {
   width: 175px;
@@ -51,4 +65,5 @@
 }
 .mfix{
   margin-top: 10px;
+  font-size: 25px;
 }

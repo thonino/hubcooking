@@ -14,7 +14,7 @@ function Nav() {
           </div>
         </div>
       </nav>
-      <nav className="flex gap-4 justify-center mt-1">
+      <nav className="flex gap-4 justify-center mt-2">
         <Link to="/"><i className="bi bi-facebook text-blue-500 text-3xl"></i></Link>
         <Link to="/"><i className="bi bi-instagram text-pink-500 text-3xl" ></i></Link>
         <Link to="/"><i className="bi bi-pinterest text-red-500 text-3xl"></i></Link>

@@ -1,7 +1,7 @@
 function About() {
   return (
     <div>
-      <div className="">
+      <div className="w350">
         <p className="hc-red pacifico text-3xl">Qui sommes nous ?</p>
         <div className="flex flex-col justify-center items-center mt-3">
           <div className="bg-red text-white w350  p-3">

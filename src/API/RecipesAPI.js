@@ -42,7 +42,8 @@ function RecipesAPI() {
         category: "plat",
         name: "Quiche Lorraine",
         DateTime: "14/13/23 14h25",
-        ingredients: "pâte brisée, creme fraiche, lardon, sel, oeufs, fromage, beurre",
+        ingredients:
+          "pâte brisée, creme fraiche, lardon, sel, oeufs, fromage, beurre",
         preparation: "25 minutes au four a 240° etc..",
         img: "quiche-lorraine.png",
       },

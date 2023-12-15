@@ -14,15 +14,15 @@ function Home() {
 
   return (
     <div>
-      <div className="flex justify-center items-center mt-2 ">
-        <img className="w-1/4 " src="logo-hc.png" alt="placeholder"/>
+      <div className="flex justify-center items-center mt-1 ">
+        <img className="w-60 " src="logo-hc.png" alt="placeholder"/>
       </div>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2">
         <About />
         <TopRecipes />
       </div>
       <br />
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2">
         <div >
           <p className="hc-blue pacifico text-3xl mb-2">
             Les Dernières Photos !

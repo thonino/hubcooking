@@ -1,28 +1,27 @@
 function UsersAPI() { return [
-  { 
-    id: 0, 
-    Like: 1, 
-    name: "admin", 
-    email: "admin@admin", 
+  {
+    id: 0,
+    Like: 1,
+    name: "admin",
+    email: "admin@admin",
     photo: "admin.jpg",
     password: "admin",
-
   },
-  { 
-    id: 1, 
-    Like: 1, 
-    name: "Thonino", 
-    email: "thonino@thonino", 
-    photo: "thonino.jpg", 
-    password: "thonino"
-,  },
-  { 
-    id: 2, 
-    Like: 1, 
+  {
+    id: 1,
+    Like: 1,
+    name: "Thonino",
+    email: "thonino@thonino",
+    photo: "thonino.jpg",
+    password: "thonino",
+  },
+  {
+    id: 2,
+    Like: 1,
     name: "Toto",
-    email: "toto@dtoto", 
-    photo: "toto.jpg", 
-    password: "toto"
-,  },
-]}
+    email: "toto@dtoto",
+    photo: "toto.jpg",
+    password: "toto",
+  },
+];}
 export default UsersAPI;

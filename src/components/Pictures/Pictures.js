@@ -11,7 +11,9 @@ function Pictures() {
 
   return (
     <div>
-      <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
+      <h1 className="hc-blue pacifico text-3xl">
+        Toutes Les Photos
+      </h1>
       <br />
       <div className="flex justify-center">
         <div className="flex flex-wrap w350">
