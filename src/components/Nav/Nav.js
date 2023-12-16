@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <div className='roboto'>
-      <nav className="bg-red text-white p-1">
+    <div className="roboto  ">
+      <nav className="bg-red text-white p-1 fixed inset-x-0 top-0">
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/" className="font-semibold text-lg">HubCooking</Link>
           <div className="flex">
@@ -14,7 +14,7 @@ function Nav() {
           </div>
         </div>
       </nav>
-      <nav className="flex gap-4 justify-center mt-2">
+      <nav className="flex gap-4 justify-center mt-2 top-fix">
         <Link to="/"><i className="bi bi-facebook text-blue-500 text-3xl"></i></Link>
         <Link to="/"><i className="bi bi-instagram text-pink-500 text-3xl" ></i></Link>
         <Link to="/"><i className="bi bi-pinterest text-red-500 text-3xl"></i></Link>
