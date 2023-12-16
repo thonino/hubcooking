@@ -55,7 +55,7 @@ function TopRecipes() {
                     </button>
                   </div>
                   <p
-                    className={`px-2 flex justify-center items-center font-bold`}
+                    className={`px-2 flex justify-center items-center font-bold pb-2`}
                   >
                     {data.name}
                   </p>

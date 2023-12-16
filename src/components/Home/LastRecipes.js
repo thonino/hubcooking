@@ -23,11 +23,11 @@ function LastRecipes() {
       {recipes.map((data) => (
         <div key={data.id} className="flex justify-center  pb-1 ">
           <img className="w175" src={"/img/" + data.img} alt={data.name} />
-          <div className="w175 bg-blue-light">
+          <div className="w175 bg-blue-light ">
             <p className="w175 bg-blue p-1 text-white capitalize roboto text-xl font-bold">
               {data.category}
             </p>
-            <p className="hc-blue pacifico mt-3">{data.name}</p>
+            <p className="hc-blue pacifico mt-3 px-2">{data.name}</p>
             <p className="hc-blue pacifico mt-3">
               {" "}
               Par :{" "}
@@ -36,7 +36,7 @@ function LastRecipes() {
             </p>
             <div className="flex justify-center items-center mt-2">
               <button className={btn("green")}>
-                <i class="bi bi-book text-lg mt-2 "> Afficher</i>
+                <i class="bi bi-book mt-2 "> Afficher</i>
               </button>
             </div>
           </div>

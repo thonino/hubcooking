@@ -14,7 +14,7 @@ function About() {
             </p>
             <p>
               Nous offrons aux passionnés de cuisine la possibilité de consulter
-              où de proposer des recettes.
+              ou de proposer des recettes.
             </p>
             <p>
               Lancée début 2024, notre équipe de 3 membres donne tout pour vous
