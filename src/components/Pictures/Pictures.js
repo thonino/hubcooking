@@ -11,16 +11,14 @@ function Pictures() {
 
   return (
     <div>
-      <h1 className="hc-blue pacifico text-3xl">
-        Toutes Les Photos
-      </h1>
+      <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
       <br />
-      <div className="flex justify-center">
-        <div className="flex flex-wrap w350">
+      <div className=" ">
+        <div className="flex flex-wrap justify-center">
           {pictures.map((data) => (
-            <div key={data.id} className="">
+            <div key={data.id} className="m-1">
               <img
-                className="flex w175"
+                className="flex w175  "
                 src={"/img/" + data.img}
                 alt={data.name}
               />
