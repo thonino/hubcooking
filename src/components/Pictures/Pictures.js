@@ -23,9 +23,7 @@ function Pictures() {
   }
   return (
     <div>
-      <h1 className="hc-blue pacifico text-3xl">
-        Toutes Les Photos
-      </h1>
+      <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
       <br />
       <div className=" ">
         <div className="flex flex-wrap justify-center">
@@ -40,7 +38,7 @@ function Pictures() {
           ))}
         </div>
       </div>
-      <h1 className="hc-blue pacifico text-xl mb-3">Ajouter une photo</h1>
+      <h1 className="hc-blue pacifico text-xl my-3">Publier photo</h1>
       <form onSubmit={HandleSubmit} className="flex justify-center">
         <div className="flex flex-col gap-y-2">
           <input
@@ -53,10 +51,10 @@ function Pictures() {
             name="fileName"
             type="text"
             className="border rounded p-2"
-            placeholder="nom du fichier"
+            placeholder="nom fichier (.png)"
           />
           <Category className="" />
-          <button type="submit" className="btn bg-green">
+          <button type="submit" className="btn bg-green text-white">
             Ajouter
           </button>
         </div>
