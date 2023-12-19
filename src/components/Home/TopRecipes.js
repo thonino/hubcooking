@@ -61,7 +61,7 @@ function TopRecipes() {
                   </p>
                   <button className="flex items-center  mr-3 ">
                     <i
-                      class={`bi bi-book btn top${
+                      class={`bi bi-book btn btn-white top${
                         index + 1
                       }  rounded  text-white `}
                     ></i>

@@ -19,8 +19,13 @@ function Pictures() {
     const like = 0;
     const newData = {id, name, img, user_id, like};
     name && setPictures([...pictures, newData])
-
   }
+
+  const handleDelete = (data) => {
+    const newDatas = pictures.filter((item)=>item.id !== data.id);
+    setPictures(newDatas);
+  }
+
   return (
     <div>
       <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
@@ -34,6 +39,14 @@ function Pictures() {
                 src={"/img/" + data.img}
                 alt={data.name}
               />
+              <button
+                onClick={() => {
+                  handleDelete(data);
+                }}
+                className="btn btn-red bg-red mt-2"
+              >
+                Effacer
+              </button>
             </div>
           ))}
         </div>
@@ -54,7 +67,10 @@ function Pictures() {
             placeholder="nom fichier (.png)"
           />
           <Category className="" />
-          <button type="submit" className="btn bg-green text-white">
+          <button
+            type="submit"
+            className="btn btn-green bg-green "
+          >
             Ajouter
           </button>
         </div>

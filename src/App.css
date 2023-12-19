@@ -40,9 +40,20 @@
   font-weight: bold;
   font-family: "Roboto Flex";
 }
-.btn:hover{
-  background-color: #4E4E4E;
-  color: #ACFFE9;
+
+.btn-white:hover{
+  background-color: white;
+  color: black;
+}
+
+.btn-green:hover{
+  background-color: #057255;;
+  color: #ACFFE9;;
+}
+
+.btn-red:hover{
+    background-color: #802238;
+    color: #FFCBCB;;
 }
 
 .w350{

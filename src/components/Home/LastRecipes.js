@@ -35,8 +35,8 @@ function LastRecipes() {
                 "Inconnu"}
             </p>
             <div className="flex justify-center items-center mt-2">
-              <button className={btn("green")}>
-                <i class="bi bi-book mt-2 "> Afficher</i>
+              <button className="btn btn-green bg-green">
+                <i class="bi bi-book mt-2"> Afficher</i>
               </button>
             </div>
           </div>
