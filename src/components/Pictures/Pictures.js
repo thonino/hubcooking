@@ -33,7 +33,7 @@ function Pictures() {
       <div className=" ">
         <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
-            <div key={data.id} className="m-1 w175">
+            <div key={data.id} className="m-1 w-img">
               <button
                 onClick={() => {
                   handleDelete(data);
