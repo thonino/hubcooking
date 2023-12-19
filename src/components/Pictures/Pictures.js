@@ -31,22 +31,23 @@ function Pictures() {
       <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
       <br />
       <div className=" ">
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
-            <div key={data.id} className="m-1">
-              <img
-                className="flex w175  "
-                src={"/img/" + data.img}
-                alt={data.name}
-              />
+            <div key={data.id} className="m-1 w175">
               <button
                 onClick={() => {
                   handleDelete(data);
                 }}
-                className="btn btn-red bg-red mt-2"
+                className="btn btn-red bg-red mb-2"
               >
                 Effacer
               </button>
+              <img
+                className="rounded"
+                src={"/img/" + data.img}
+                alt={data.name}
+              />
+              <p className="pacifico hc-red">{data.name}</p>
             </div>
           ))}
         </div>
@@ -67,10 +68,7 @@ function Pictures() {
             placeholder="nom fichier (.png)"
           />
           <Category className="" />
-          <button
-            type="submit"
-            className="btn btn-green bg-green "
-          >
+          <button type="submit" className="btn btn-green bg-green ">
             Ajouter
           </button>
         </div>

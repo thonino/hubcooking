@@ -14,8 +14,8 @@ function Home() {
 
   return (
     <div>
-      <div className="flex justify-center items-center mt-1 ">
-        <img className="w-60 " src="logo-hc.png" alt="placeholder"/>
+      <div className="flex justify-center items-center mt-1">
+        <img className="w-60 " src="logo-hc.png" alt="placeholder" />
       </div>
       <div className="flex flex-wrap justify-center gap-2">
         <About />
@@ -23,7 +23,7 @@ function Home() {
       </div>
       <br />
       <div className="flex flex-wrap justify-center gap-2">
-        <div >
+        <div className="">
           <p className="hc-blue pacifico text-3xl mb-3">
             Nos dernières photos !
           </p>
@@ -37,7 +37,7 @@ function Home() {
           <LastRecipes />
         </div>
       </div>
-      <br/>
+      <br />
     </div>
   );
 }

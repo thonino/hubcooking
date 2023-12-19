@@ -56,27 +56,22 @@
     color: #FFCBCB;;
 }
 
-.w350{
-  width: 350px;
-}
-.w360{
-  width: 360px;
-}
-.w175 {
-  width: 175px;
-}
-.w100 {
-  width: 200px;
-}
-.h240{
-  height: 240px;
-}
-.w60 {
-  width: 60px;
-}
-.h60{
-  height: 60px;
-}
+.w-about { width: 360px; }
+.w-top-rcp { width: 360px; }
+
+.w-last-pic { width: 360px; }
+.w-last-pic-img { width: 176px; }
+
+.w-last-rcp { width: 360px; }
+.w-last-rcp-info { width: 180px; }
+.w-last-rcp-img { width: 180px; height: 176px;}
+
+.w60 { width: 60px; }
+
+.w100 { width: 200px; }
+.h240{ height: 240px; }
+.h60{ height: 60px;}
+
 .mfix{
   margin-top: 10px;
   font-size: 25px;

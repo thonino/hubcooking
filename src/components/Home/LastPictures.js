@@ -10,20 +10,20 @@ function LastPictures() {
       }, []);
 
   return (
-    <div className="flex justify-center">
-          <div className="flex flex-wrap w350 ">
-            {pictures.map((data) => (
-              <div key={data.id} >
-                <img
-                  className="flex w175  pb-1"
-                  src={"/img/" + data.img}
-                  alt={data.name}
-                />
-              </div>
-            ))}
+    <div className="flex justify-center ">
+      <div className="w-last-pic flex flex-wrap gap-2">
+        {pictures.map((data) => (
+          <div key={data.id} className="w-last-pic-img">
+            <img
+              className="flex rounded"
+              src={"/img/" + data.img}
+              alt={data.name}
+            />
           </div>
-        </div>
-  )
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default LastPictures

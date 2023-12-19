@@ -21,10 +21,14 @@ function LastRecipes() {
   return (
     <div className="flex flex-col">
       {recipes.map((data) => (
-        <div key={data.id} className="flex justify-center  pb-1 ">
-          <img className="w175" src={"/img/" + data.img} alt={data.name} />
-          <div className="w175 bg-blue-light ">
-            <p className="w175 bg-blue p-1 text-white capitalize roboto text-xl font-bold">
+        <div key={data.id} className="flex justify-center pb-2">
+          <img
+            className="w-last-rcp-img rounded-l"
+            src={"/img/" + data.img}
+            alt={data.name}
+          />
+          <div className="w-last-rcp-info bg-blue-light roboto rounded-br">
+            <p className="bg-blue p-1 text-white capitalize text-xl font-bold rounded-tr">
               {data.category}
             </p>
             <p className="hc-blue pacifico mt-3 px-2">{data.name}</p>
