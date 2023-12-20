@@ -7,6 +7,7 @@ import Pictures from "./components/Pictures/Pictures";
 import Recipes from "./components/Recipes/Recipes";
 import Profils from "./components/Profils/Profils";
 import Footer from "./components/Footer/Footer";
+import Categories from "./components/Categories/Categories";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/pictures" element={<Pictures />} />
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/profils" element={<Profils />} />
+        <Route path="/categories/:name" element={<Categories />} />
       </Routes>
       <Footer />
     </div>

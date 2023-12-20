@@ -3,6 +3,7 @@ import RecipesAPI from './API/RecipesAPI.js'
 import UsersAPI from './API/UsersAPI.js'
 import PicturesAPI from './API/PicturesAPI.js'
 import CommentsAPI from './API/CommentsAPI.js'
+import CategoriesAPI from './API/CategoriesAPI.js'
 
 export function makeServer({ environment = "development" } = {}) {
   let server = createServer({ environment,
@@ -24,6 +25,10 @@ export function makeServer({ environment = "development" } = {}) {
 
       this.get("/comments", () => {
         return { comments: CommentsAPI() };
+      });
+
+      this.get("/categories", () => {
+        return { categories: CategoriesAPI() };
       });
     },
   });

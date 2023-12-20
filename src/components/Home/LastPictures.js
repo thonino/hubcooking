@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 
 function LastPictures() {
-    const [pictures, setPictures] = useState([]);
+  const [pictures, setPictures] = useState([]);
 
-    useEffect(() => {
-        fetch("/api/pictures")
-        .then((response) => response.json())
-        .then((json) => setPictures(json.pictures.slice(-4)));
-      }, []);
+  useEffect(() => {
+    fetch("/api/pictures")
+      .then((response) => response.json())
+      .then((json) => setPictures(json.pictures.slice(-4)));
+  }, []);
+
 
   return (
     <div className="flex justify-center ">
