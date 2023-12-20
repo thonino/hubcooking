@@ -7,7 +7,7 @@ function CategoriesAPI() {
     { id: 4, name: "accompagnement" },
     { id: 5, name: "dessert" },
     { id: 6, name: "boisson" },
-    { id: 7, name: "boisson-chaude" },
+    { id: 7, name: "boisson chaude" },
   ];
 }
 export default CategoriesAPI

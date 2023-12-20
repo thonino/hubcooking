@@ -4,10 +4,10 @@ import { useParams } from "react-router-dom";
 
 
 function Categories() {
-  const navigate = useNavigate();
-  const { name } = useParams(); 
   const [pictures, setPictures] = useState([]);
   const [categories, setCategories] = useState([]);
+  const navigate = useNavigate();
+  const { name } = useParams(); 
   
   useEffect(() => {
     fetch("/api/categories")
@@ -21,9 +21,7 @@ function Categories() {
       .then((json) => setPictures(json.pictures));
   }, []);
 
-  const catFilter = pictures.filter((data) =>
-    name ? data.category === name : true
-  );
+  const catFilter = pictures.filter((data) => data.category === name);
   
     const handleDelete = (data) => {
       const newDatas = pictures.filter((item) => item.id !== data.id);
