@@ -20,6 +20,7 @@ function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/profils" element={<Profils />} />
         <Route path="/categories/:name" element={<Categories />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
       <Footer />
     </div>

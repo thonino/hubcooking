@@ -53,20 +53,20 @@ function Pictures() {
         <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
             <div key={data.id} className="m-1 w-img">
-              <button
+              {/* <button
                 onClick={() => {
                   handleDelete(data);
                 }}
                 className="btn btn-red bg-red mb-2"
               >
                 Effacer
-              </button>
+              </button> */}
               <img
                 className="rounded"
                 src={"/img/" + data.img}
                 alt={data.name}
               />
-              <p className="pacifico hc-red">{data.name}</p>
+              <p className="pacifico hc-red capitalize">{data.name}</p>
             </div>
           ))}
         </div>

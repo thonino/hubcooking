@@ -13,7 +13,7 @@ function PicturesAPI() {
       id: 1,
       user_id: 2,
       like: 6,
-      category: "plat",
+      category: "accompagnement",
       name: "frites",
       DateTime: "12/12/23 09h00",
       img: "frites.png",
@@ -80,6 +80,24 @@ function PicturesAPI() {
       name: "ravioli",
       DateTime: "16/12/23 18h30",
       img: "ravioli.png",
+    },
+    {
+      id: 10,
+      user_id: 8,
+      like: 22,
+      category: "boisson chaude",
+      name: "cafe",
+      DateTime: "17/12/23 08h30",
+      img: "cafe.png",
+    },
+    {
+      id: 11,
+      user_id: 9,
+      like: 14,
+      category: "aperitif",
+      name: "chips",
+      DateTime: "17/12/23 18h00",
+      img: "chips.png",
     },
   ];
 }

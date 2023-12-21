@@ -17,7 +17,7 @@ function RecipesAPI() {
       id: 1,
       user_id: 2,
       like: 6,
-      category: "plat",
+      category: "accompagnement",
       name: "frites",
       DateTime: "12/12/23 09h00",
       ingredients: "pommes de terre, huile végétale, sel",
@@ -112,6 +112,30 @@ function RecipesAPI() {
       preparation:
         "1. Préparer la pâte à ravioli. 2. Préparer la farce en mélangeant la viande hachée, l'ail, le chou blanc et la sauce soja. 3. Façonner les raviolis en utilisant la pâte et la farce. 4. Cuire les raviolis dans de l'eau bouillante jusqu'à ce qu'ils flottent à la surface. 5. Servir chaud.",
       img: "ravioli.png",
+    },
+    {
+      id: 10,
+      user_id: 8,
+      like: 15,
+      category: "boisson chaude",
+      name: "cafe",
+      DateTime: "17/12/23 08h30",
+      ingredients: "café moulu, eau chaude",
+      preparation:
+        "1. Ajouter une cuillère de café moulu dans une tasse. 2. Verser de l'eau chaude sur le café. 3. Remuer et laisser infuser pendant quelques minutes. 4. Déguster.",
+      img: "cafe.png",
+    },
+    {
+      id: 11,
+      user_id: 9,
+      like: 9,
+      category: "aperitif",
+      name: "chips",
+      DateTime: "17/12/23 18h00",
+      ingredients: "pommes de terre, huile végétale, sel",
+      preparation:
+        "1. Éplucher les pommes de terre et les couper en fines tranches. 2. Faire chauffer l'huile dans une poêle. 3. Frire les tranches de pommes de terre jusqu'à ce qu'elles soient croustillantes. 4. Égoutter et saupoudrer de sel.",
+      img: "chips.png",
     },
   ];
 }
