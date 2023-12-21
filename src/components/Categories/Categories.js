@@ -30,10 +30,10 @@ function Categories() {
   
   return (
     <div>
-      <h1 className="hc-blue pacifico text-3xl">Trier categorie</h1>
+      <h1 className="hc-blue pacifico text-3xl mt-2">Trier categorie</h1>
       <br />
       <select
-        className="border rounded p-2 mb-2 bg-red-light w100 text-center"
+        className="border rounded p-2 mb-2 bg-red-light w200 text-center"
         onChange={(e) => navigate(`/categories/${e.target.value}`)}
       >
         <option value="">Catégorie</option>

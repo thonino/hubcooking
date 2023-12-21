@@ -4,6 +4,8 @@ function Pictures() {
   const navigate = useNavigate();
   const [pictures, setPictures] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [updateCategory, setUpdateCategory] = useState();
+  const [updateName, setUpdateName] = useState();
   useEffect(() => {
     fetch("/api/categories")
       .then((response) => response.json())
@@ -32,13 +34,22 @@ function Pictures() {
     setPictures(newDatas);
   };
 
+  const handleUpdate = (data) => { 
+    const newDatas = pictures.map((item) =>
+      item.id === data.id
+        ? { ...item, name: updateName, category: updateCategory }
+        : item
+    );
+    setPictures(newDatas);
+  }
+
   return (
     <div>
-      <h1 className="hc-blue pacifico text-3xl">Toutes Les Photos</h1>
+      <h1 className="hc-blue pacifico text-3xl mt-2">Toutes Les Photos</h1>
       <br />
-      
+
       <select
-        className="border rounded p-2 mb-2 bg-red-light w100 text-center"
+        className="border rounded p-2 mb-2 bg-red-light w200 text-center"
         onChange={(e) => navigate(`/categories/${e.target.value}`)}
       >
         <option value="">Catégorie</option>
@@ -52,15 +63,31 @@ function Pictures() {
       <div className=" ">
         <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
-            <div key={data.id} className="m-1 w-img">
-              {/* <button
+            <div key={data.id} className="m-1 w-img flex flex-col">
+              <input
+                defaultValue={updateCategory ? updateCategory : data.category}
+                onChange={(e) => setUpdateCategory(e.target.value)}
+                className="border rounded p-2 mb-2"
+              />
+              <input
+                defaultValue={updateName ? updateName : data.name}
+                onChange={(e) => setUpdateName(e.target.value)}
+                className="border rounded p-2 mb-2"
+              />
+              <button
+                onClick={() => handleUpdate(data)}
+                className="btn btn-yellow bg-yellow mb-2"
+              >
+                Appliquer
+              </button>
+              <button
                 onClick={() => {
                   handleDelete(data);
                 }}
-                className="btn btn-red bg-red mb-2"
+                className="btn btn-red bg-red mb-2 "
               >
                 Effacer
-              </button> */}
+              </button>
               <img
                 className="rounded"
                 src={"/img/" + data.img}
