@@ -89,3 +89,7 @@
 .top-fix{
   margin-top: 44px;
 }
+
+.toggle {
+  display: none;
+}

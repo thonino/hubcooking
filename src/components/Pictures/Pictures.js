@@ -50,7 +50,6 @@ function Pictures() {
 
 const handleToggle = () => {
   const toggleElements = document.querySelectorAll(".toggle");
-
   toggleElements.forEach((element) => {
     element.style.display =
       element.style.display === "block" ? "none" : "block";
@@ -84,7 +83,7 @@ const handleToggle = () => {
         <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
             <div key={data.id} className="m-1 w-img flex flex-col">
-              <div className={"toggle "}>
+              <div className={"toggle"}>
                 <input
                   defaultValue={updateImg ? updateImg : data.img}
                   onChange={(e) => setUpdateImg(e.target.value)}
