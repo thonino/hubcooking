@@ -60,6 +60,10 @@
     background-color: #836622;;
     color: #FFECC0;;;
 }
+.btn-blue:hover{
+    background-color: #193955;;
+    color: #9CD1FF;;
+}
 
 .w-about { width: 360px; }
 .w-top-rcp { width: 360px; }
@@ -90,6 +94,6 @@
   margin-top: 44px;
 }
 
-.toggle {
+.toggleEdit, .toggleAdd  {
   display: none;
 }

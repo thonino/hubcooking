@@ -19,7 +19,7 @@ function Pictures() {
       .then((json) => setPictures(json.pictures));
   }, []);
 
-  const HandleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const id = pictures.length;
     const name = e.target.itemName.value;
@@ -48,8 +48,9 @@ function Pictures() {
     setPictures(newDatas);
   }
 
-const handleToggle = () => {
-  const toggleElements = document.querySelectorAll(".toggle");
+
+const handleToggle = (retrieve) => {
+  const toggleElements = document.querySelectorAll("." + retrieve); 
   toggleElements.forEach((element) => {
     element.style.display =
       element.style.display === "block" ? "none" : "block";
@@ -73,17 +74,53 @@ const handleToggle = () => {
       </select>
       <br />
       <button
-        className="btn btn-blue bg-blue-light mb-2 "
-        onClick={handleToggle}
+        className="btn btn-blue bg-blue-light mb-2 mr-2"
+        onClick={() => handleToggle("toggleEdit")}
       >
         Modifier
       </button>
+      <button
+        className="btn btn-green bg-green mb-2 "
+        onClick={() => handleToggle("toggleAdd")}
+      >
+        Ajouter
+      </button>
+
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="hc-blue pacifico text-xl my-3">Publiez une photo !</h1>
+        <form onSubmit={handleSubmit} className="toggleAdd ">
+          <div className="flex flex-col gap-y-2">
+            <input
+              name="itemName"
+              type="text"
+              className="border rounded p-2"
+              placeholder="Entrer le nom"
+            />
+            <input
+              name="fileName"
+              type="text"
+              className="border rounded p-2"
+              placeholder="nom fichier (.png)"
+            />
+            <select className="border rounded p-2">
+              {categories.map((data) => (
+                <option key={data.id} value={data.name}>
+                  {data.name}
+                </option>
+              ))}
+            </select>
+            <button type="submit" className="btn btn-green bg-green mb-2">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
 
       <div>
         <div className="flex flex-wrap justify-center ">
           {pictures.map((data) => (
             <div key={data.id} className="m-1 w-img flex flex-col">
-              <div className={"toggle"}>
+              <div className={"toggleEdit"}>
                 <input
                   defaultValue={updateImg ? updateImg : data.img}
                   onChange={(e) => setUpdateImg(e.target.value)}
@@ -124,33 +161,6 @@ const handleToggle = () => {
           ))}
         </div>
       </div>
-      <h1 className="hc-blue pacifico text-xl my-3">Publiez une photo !</h1>
-      <form onSubmit={HandleSubmit} className="flex justify-center">
-        <div className="flex flex-col gap-y-2">
-          <input
-            name="itemName"
-            type="text"
-            className="border rounded p-2"
-            placeholder="Entrer le nom"
-          />
-          <input
-            name="fileName"
-            type="text"
-            className="border rounded p-2"
-            placeholder="nom fichier (.png)"
-          />
-          <select className="border rounded p-2">
-            {categories.map((data) => (
-              <option key={data.id} value={data.name}>
-                {data.name}
-              </option>
-            ))}
-          </select>
-          <button type="submit" className="btn btn-green bg-green ">
-            Ajouter
-          </button>
-        </div>
-      </form>
     </div>
   );
 }
