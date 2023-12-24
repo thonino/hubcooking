@@ -7,6 +7,7 @@ function Pictures() {
   const [updateCategory, setUpdateCategory] = useState();
   const [updateName, setUpdateName] = useState();
   const [updateImg, setUpdateImg] = useState();
+  
   useEffect(() => {
     fetch("/api/categories")
       .then((response) => response.json())
@@ -48,17 +49,17 @@ function Pictures() {
     setPictures(newDatas);
   }
 
+  const handleToggle = (retrieve) => {
+    const toggleElements = document.querySelectorAll("." + retrieve); 
+    toggleElements.forEach((element) => {
+      element.style.display =
+        element.style.display === "block" ? "none" : "block";
+    });
+  };
 
-const handleToggle = (retrieve) => {
-  const toggleElements = document.querySelectorAll("." + retrieve); 
-  toggleElements.forEach((element) => {
-    element.style.display =
-      element.style.display === "block" ? "none" : "block";
-  });
-};
 
   return (
-    <div>
+    <div className="pb-7">
       <h1 className="hc-blue pacifico text-3xl mt-2">Toutes Les Photos</h1>
       <br />
       <select
@@ -74,21 +75,27 @@ const handleToggle = (retrieve) => {
       </select>
       <br />
       <button
+        className="btn btn-green bg-green mb-2 mr-2"
+        onClick={() => handleToggle("toggleAdd")}
+      >
+        Ajouter
+      </button>
+      <button
         className="btn btn-blue bg-blue-light mb-2 mr-2"
         onClick={() => handleToggle("toggleEdit")}
       >
         Modifier
       </button>
       <button
-        className="btn btn-green bg-green mb-2 "
-        onClick={() => handleToggle("toggleAdd")}
+        className="btn btn-red bg-red-light mb-2 "
+        onClick={() => handleToggle("toggleDelete")}
       >
-        Ajouter
+        Supprimer
       </button>
 
       <div className="flex flex-col justify-center items-center">
-        <h1 className="hc-blue pacifico text-xl my-3">Publiez une photo !</h1>
         <form onSubmit={handleSubmit} className="toggleAdd ">
+        <h1 className="hc-blue pacifico text-xl my-3">Publiez une photo !</h1>
           <div className="flex flex-col gap-y-2">
             <input
               name="itemName"
@@ -142,15 +149,15 @@ const handleToggle = (retrieve) => {
                 >
                   Appliquer
                 </button>
-                <button
-                  onClick={() => {
-                    handleDelete(data);
-                  }}
-                  className="flex w-img btn btn-red bg-red mb-2 "
-                >
-                  Effacer
-                </button>
               </div>
+              <button
+                onClick={() => {
+                  handleDelete(data);
+                }}
+                className="flex w-img btn btn-red bg-red mb-2 toggleDelete"
+              >
+                Supprimer
+              </button>
               <img
                 className="rounded"
                 src={"/img/" + data.img}

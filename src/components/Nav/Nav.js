@@ -5,9 +5,9 @@ function Nav() {
     <div className="roboto  ">
       <nav className="bg-red text-white p-1 fixed inset-x-0 top-0">
         <div className="container mx-auto flex items-center justify-between">
-          <Link to="/" className="font-semibold text-lg">HC</Link>
+          <Link to="/" className="font-semibold text-lg">HubCooking</Link>
           <div className="flex">
-            <Link to="/categories" className="px-2">Categorie</Link>
+            {/* <Link to="/categories" className="px-2">Categorie</Link> */}
             <Link to="/pictures" className="px-2">Photos</Link>
             <Link to="/recipes" className="px-2">Recettes</Link>
             <Link to="/profils" className="px-2">Profiles</Link>
