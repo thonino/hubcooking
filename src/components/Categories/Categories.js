@@ -31,7 +31,7 @@ function Categories() {
       );
       setFilter(filteredPictures);
     } else {
-      setFilter(pictures); // Affiche toutes les images si aucun paramètre de catégorie n'est spécifié
+      setFilter(pictures); 
     }
   }, [name, pictures]);
 
