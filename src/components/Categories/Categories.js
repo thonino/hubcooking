@@ -30,9 +30,8 @@ function Categories() {
         (data) => data.category === name
       );
       setFilter(filteredPictures);
-    } else {
-      setFilter(pictures); 
-    }
+    } 
+    else { setFilter(pictures); }
   }, [name, pictures]);
 
   const handleDelete = (data) => {
@@ -42,15 +41,9 @@ function Categories() {
 
   const handleUpdate = (data) => {
     const updateData = {};
-    if (updateCategory) {
-      updateData.category = updateCategory;
-    }
-    if (updateName) {
-      updateData.name = updateName;
-    }
-    if (updateImg) {
-      updateData.img = updateImg;
-    }
+    if (updateCategory) { updateData.category = updateCategory; }
+    if (updateName) { updateData.name = updateName; }
+    if (updateImg) { updateData.img = updateImg; }
     const newDatas = filter.map((item) =>
       item.id === data.id ? { ...item, ...updateData } : item
     );
@@ -81,7 +74,7 @@ function Categories() {
   return (
     <div>
       <h1 className="hc-blue pacifico text-3xl mt-2">
-        Trier par catégorie : {name}
+        Trier par catégorie : <span className="capitalize">{name}</span>
       </h1>
       <br />
       <select
