@@ -14,14 +14,18 @@ function Recipes() {
 
 
   return (
-    <div>
-      <h1>Les Recettes</h1><br/>
+  <div>
+    <h1>Les Recettes</h1>
+    <br />
+    <div className="flex flex-wrap justify-center ">
       {recipes.map((data) => (
-      <div key={data.id}>
-        {data.name}
-      </div>
+        <div key={data.id} className="m-1 w-img flex flex-col">
+          {data.name}
+          <img className="rounded" src={"/img/" + data.img} alt={data.name} />
+        </div>
       ))}
-    </div>
+  </div>
+  </div>
   );
 }
 
