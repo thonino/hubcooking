@@ -10,9 +10,6 @@ function Recipes() {
         setRecipes(json.recipes);
       });
   }, []);
-
-
-
   return (
     <div>
       <h1 className="hc-blue pacifico text-3xl mt-2">Toutes Les Recettes</h1>
