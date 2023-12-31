@@ -23,5 +23,13 @@ function UsersAPI() { return [
     photo: "toto.jpg",
     password: "toto",
   },
+  {
+    id: 2,
+    Like: 1,
+    name: "user",
+    email: "user@duser",
+    photo: "user.jpg",
+    password: "user",
+  },
 ];}
 export default UsersAPI;
