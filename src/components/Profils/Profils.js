@@ -17,6 +17,7 @@ function Profils() {
         <div key={data.id}className="roboto">
           <p>Nom : {data.name} </p>
           <p>Email : {data.email} </p>
+          <p>Email : {data.password} </p>
           <br />
 
         </div>
